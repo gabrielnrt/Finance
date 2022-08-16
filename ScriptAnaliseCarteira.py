@@ -5,7 +5,7 @@ from pandas import DataFrame, read_csv
 from datetime import datetime, date
 from pandas_datareader import data as web
 from numpy import average, zeros, array
-from matplotlib.pyplot import subplots,show
+from matplotlib.pyplot import subplots,show, title
 
 from pandas.plotting import register_matplotlib_converters
 
@@ -125,7 +125,6 @@ def graficos(df, nome):
     ax1.plot(df['Variação Total (R$)'], color = 'navy', label = '$\Delta(t)$')
     ax1.legend(loc = 'lower left')
     ax1.grid(axis = 'both', linestyle = '--')
-    ax1.title(nome)
 
     ax2 = ax1.twinx()
 
@@ -201,8 +200,9 @@ UltimaFecha = carteira.iloc[-1]['Data da Compra']
 
 ValoresInvestidos = []
 
-ColunaFinal = zeros(len(df.loc[UltimaFecha:].index))
 
+# Em geral não dá pra somar variáveis de diferentes tipagens, mas nesse caso deu certo
+ColunaFinal = 0
 
 
 for nome in lista:
