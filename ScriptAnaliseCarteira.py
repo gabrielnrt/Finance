@@ -17,12 +17,6 @@ register_matplotlib_converters()
 
 hoje = date.today()
 
-#-----------------------------------------------------------
-# Conversor de datas
-
-def conversor(fecha):
-    return datetime.strptime(fecha, '%d/%m/%Y')
-
 
 #---------------------------------------------------------
 # Dados de entrada
@@ -42,7 +36,7 @@ def LeituraDaCarteira():
                             sep = separador,
                             decimal = dec,
                             parse_dates = ['Data da Compra'],
-                            date_parser = conversor)
+                            date_parser = lambda fecha : datetime.strptime(fecha, '%d/%m/%Y'))
     else:
         Ativos = []
         Quantidades = []
@@ -71,7 +65,7 @@ def LeituraDaCarteira():
 
                 carteira = DataFrame(dicionario,
                                      parse_dates = ['Data da Compra'],
-                                     date_parser = conversor)
+                                     date_parser = lambda fecha : datetime.strptime(fecha, '%d/%m/%Y'))
     return carteira
 
 
