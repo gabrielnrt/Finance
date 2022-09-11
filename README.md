@@ -114,9 +114,9 @@ $$
 \begin{cases}
  q_0(X - X_0) & t_0 < t < t_1, \\
  \vdots \\
- Q_k(X - \overline{X}_k) & t_k < t < t_{k+1}, \\
+ Q_k(X - \overline{X_k}) & t_k < t < t_{k+1}, \\
  \vdots \\
- Q_{n-1}(X - \overline{X}_{n-1}) & t_{n-1} < t,
+ Q_{n-1}(X - \overline{X_{n-1}}) & t_{n-1} < t,
  \end{cases}
 $$
 
