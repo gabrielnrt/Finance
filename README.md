@@ -102,9 +102,9 @@ $$ Q_k \equiv \sum_{i = 0}^k q_i,$$
 e a média ponderada até a k-ésima compra por
 
 $$
-\overline{X}_{k} \equiv
+\overline{X_k} \equiv
 \frac{1}{Q_k}
-\Sigma_{i=0}^{k} q_i X_i,
+\sum_{i=0}^{k} q_i X_i,
 $$
 
 segue que a variação total é
