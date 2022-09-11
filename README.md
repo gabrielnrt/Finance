@@ -75,7 +75,13 @@ $$ \delta = \frac{(q_0 + q_1)X}{q_0 X_0 + q_1 X_1} -1 = \frac{X}{\overline{X}} -
 
 Portanto,
 
-$$ \Delta (t) = \begin{cases} q_0(X - X_0) & t_0 < t < t_1, \\ Q(X - \overline{X}) & t_1 < t. \end{cases}  $$
+$$
+\Delta (t) =
+\begin{cases}
+q_0(X - X_0) & t_0 < t < t_1, \\
+Q(X - \overline{X}) & t_1 < t.
+\end{cases}  
+$$
 
 $$ \delta (t) = \begin{cases} X X_0^{-1} -1 & t_0 < t < t_1, \\ X \overline{X}^{-1} -1 & t_1 < t. \end{cases} $$
 
@@ -96,7 +102,7 @@ segue que a variação total é
 $$
 \Delta (t) =
 \begin{cases}
- q_0(X - X_0) & t_0 < t < t_1, \\ 
+ q_0(X - X_0) & t_0 < t < t_1, \\
  \vdots \\
  Q_k(X - \overline{X}_k) & t_k < t < t_{k+1}, \\
  \vdots \\
