@@ -63,7 +63,7 @@ Sejam $q_1 = q(t_1)$ e $X_1 = X(t_1)$, com $t_1 > t_0$, e $(q_0,X_0)$ como no ex
 
 $$ Q \equiv q_0 + q_1,$$
 
-e chamando a média ponderada do preço do ativo comprado nos instantes $t_0$ e $t_1$ de $ \overline{X} $,
+e chamando a média ponderada do preço do ativo comprado nos instantes $t_0$ e $t_1$ de $\overline{X}$,
 
 $$ \overline{X} \equiv \frac{q_0 X_0 + q_1 X_1}{q_0 + q_1}, $$
 
