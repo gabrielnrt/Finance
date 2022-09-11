@@ -95,13 +95,13 @@ $$
 
 Fazendo $n$ compras de um mesmo ativo em instantes distintos, é fácil mostrar que as variações terão a mesma estrutura que no caso anterior.
 
-Chamando a quantidade total até a k-ésima compra ($k < n$) por
+Chamando a quantidade total até a k-ésima compra ( $k < n$ ) por
 
 $$ Q_k \equiv \sum_{i = 0}^k q_i,$$
 
 e a média ponderada até a k-ésima compra por
 
-$$ \overline{X}_{k} \equiv \frac{1}{Q_k} \sum_{i=0}^k q_i X_i, $$
+$$ {\overline{X}}_{k} \equiv \frac{1}{Q_k} \sum_{i=0}^{k} q_i X_i, $$
 
 segue que a variação total é
 
