@@ -10,7 +10,7 @@ Segue abaixo uma breve descrição dos arquivos contidos usados:
 
 ### `AnaliseCarteira.ipynb`
 
-É neste notebook que desenvolvo passo a passo todo o projeto e a linha de raciocínio na produção dos gráficos das variações percentuais e absolutas de cada ativo, cobrindo desde o arquivo de entrada, passando por requisições API do [Yahoo Finance] (https://br.financas.yahoo.com/), até chegar na geração dos gráficos propriamente ditos.
+É neste notebook que desenvolvo passo a passo todo o projeto e a linha de raciocínio na produção dos gráficos das variações percentuais e absolutas de cada ativo, cobrindo desde o arquivo de entrada, passando por requisições API do [Yahoo Finance](https://br.financas.yahoo.com/), até chegar na geração dos gráficos propriamente ditos.
 
 ### `ScriptAnaliseCarteira.py`
 
