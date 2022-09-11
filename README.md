@@ -83,7 +83,13 @@ Q(X - \overline{X}) & t_1 < t.
 \end{cases}  
 $$
 
-$$ \delta (t) = \begin{cases} X X_0^{-1} -1 & t_0 < t < t_1, \\ X \overline{X}^{-1} -1 & t_1 < t. \end{cases} $$
+$$
+\delta (t) =
+\begin{cases}
+X X_0^{-1} -1 & t_0 < t < t_1, \\
+X \overline{X}^{-1} -1 & t_1 < t.
+\end{cases}
+$$
 
 ### Ex.3: Um mesmo ativo comprado em $n$ instantes distintos
 
@@ -95,7 +101,7 @@ $$ Q_k \equiv \sum_{i = 0}^k q_i,$$
 
 e a média ponderada até a k-ésima compra por
 
-$$ \overline{X}_k \equiv \frac{1}{Q_k} \sum_{i = 0}^k q_i X_i, $$
+$$ \overline{X}_{k} \equiv \frac{1}{Q_k} \sum_{i=0}^k q_i X_i, $$
 
 segue que a variação total é
 
