@@ -104,7 +104,7 @@ e a média ponderada até a k-ésima compra por
 $$
 \overline{X}_{k} \equiv
 \frac{1}{Q_k}
-\sum_{i=0}^{k} q_i X_i,
+\Sigma_{i=0}^{k} q_i X_i,
 $$
 
 segue que a variação total é
