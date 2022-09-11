@@ -118,4 +118,13 @@ $$
 
 e que a variação percentual é
 
-$$ \delta (t) = \begin{cases} X(X_0)^{-1} -1 & t_0 < t < t_1, \\ \vdots \\ X(\overline{X}_k)^{-1} -1 & t_k < t < t_{k+1}, \\ \vdots \\ X(\overline{X}_{n-1})^{-1} -1 & t_{n-1} < t. \end{cases} $$
+$$
+\delta (t) =
+\begin{cases}
+X(X_0)^{-1} -1 & t_0 < t < t_1, \\
+\vdots \\
+X(\overline{X}_k)^{-1} -1 & t_k < t < t_{k+1}, \\
+\vdots \\
+X(\overline{X}_{n-1})^{-1} -1 & t_{n-1} < t.
+\end{cases}
+$$
