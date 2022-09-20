@@ -1,7 +1,7 @@
 #---------------------------------------------------------
 # Importação das bibliotecas
 
-from pandas import DataFrame, read_csv
+from pandas import DataFrame, read_csv, concat
 from datetime import datetime, date
 from pandas_datareader import data as web
 from numpy import average, zeros, array
@@ -203,6 +203,15 @@ UltimaFecha = carteira.iloc[-1]['Data da Compra']
 
 ValoresInvestidos = []
 
+#=============================================================================
+# TESTE PRA FUTURAMENTE CONSTRUIR UM PAINEL INTERATIVO
+
+dff = DataFrame()
+
+#=============================================================================
+
+
+
 
 # Em geral não dá pra somar variáveis de diferentes tipagens, mas nesse caso deu certo
 ColunaFinal = 0
@@ -229,7 +238,9 @@ for nome in lista:
 
      df['Variação Percentual'] = (df['Close'] / df['X_k']) -1
 
-     graficos(df,nome)
+     #graficos(df,nome)
+     df['Nome'] = nome
+     dff = concat([dff,df])
 
      #-------------------------------------------------------------------------------------------
 
@@ -249,4 +260,11 @@ novatabela = DataFrame(data = DICIONARIO,
 
 novatabela['Variação Percentual'] = novatabela['Variação Total (R$)']/TotalInvestido
 
-graficos(novatabela,'Carteira Teste')
+novatabela['Nome'] = 'Carteira'
+
+#graficos(novatabela,'Carteira Teste')
+
+dff.drop(columns = ['Close', 'Q_k', 'X_k'], inplace = True)
+dff = concat([dff,novatabela])
+#dff.reset_index(inplace = True)
+dff.to_csv('tabelafinal.csv')#, index = False)
