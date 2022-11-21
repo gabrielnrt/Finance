@@ -28,13 +28,13 @@
 
   Esta é a carteira fictícia usada como teste para geração de códigos, contendo o histórico das ordens efetuadas pelo investidor. Suas colunas são as seguintes:
 
-    * Ativo: Ticker do ativo negociado na B3
+  * Ativo: Ticker do ativo negociado na B3
 
-    * Quantidade: Número de vezes que o mesmo ativo foi comprado no dia
+  * Quantidade: Número de vezes que o mesmo ativo foi comprado no dia
 
-    * Compra (R$): Valor da unidade do ativo no momento em que este foi comprado
+  * Compra (R$): Valor da unidade do ativo no momento em que este foi comprado
 
-    * Data da Compra: Dia em que o ativo foi comprado no formato `%d/%m/%Y`.
+  * Data da Compra: Dia em que o ativo foi comprado no formato `%d/%m/%Y`.
 
   Note que, por ser um histórico de ordens, então o mesmo ativo pode aparecer em linhas diferentes, com preços de compra e quantidades distintas, se o investidor fizer essas compras em momentos diferentes.
 
